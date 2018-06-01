@@ -1,41 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Juicy Fruit Bar</title>
 </head>
 <body>
 
-<h1><i>Juicy Fruit Bar and Spa</i></h1>
-<style>
-	h1{
-		text-align: center;
-	}
-</style>
+	<style>
+		body{
+			background-color: #f4b342;
+		}
 
-<p id="display"> </p>
-
-<input type="button" value="push prompt" onclick="Prompt()">
-
-
-<script>
-	var fruits = ["apple ", "orange ", "kiwi "];
-
-	function Prompt(){
-		var fruit = prompt("Add a new fruit!").toLowerCase();
-		arr.push(fruit);
-		console.log(arr);
-	}
-
-	function sorting(){
-		arr.sort();
-		console.log(arr);
-	}
-
-	var arr = fruits.split(" with ");
-	document.getElementById("display").innerHTML = 
+		h1{
+			text-align: center;
+			font-size: 50px;
+		}
+	</style>
 
 
-</script>
+	<h1><i>Juicy Fruit Bar and Spa</i></h1>
+
+	<h2>Menu</h2>
+	<h3>Pick any one</h3>
+	<ul><i>
+		<li>strawberry</li>
+		<li>banana</li>
+		<li>grapefruit</li>
+		<li>grapes</li>
+		<li>watermelon</li>
+		<li>acai</li>
+		</i>
+	</ul>
+
+
+	<strong><p id="display">Hi, I'm Kay! </p></strong>
+
+	<input id = "entry" type="button" value="May I take your order?" onclick="Prompt()">
+	
+
+	<script>
+		var arr = ["apple ", "orange ", "kiwi "];
+
+		function Prompt(){
+
+			var newFruit = prompt("Add a new fruit!").toLowerCase();
+			
+			arr.push(document.getElementById("entry").value.toLowerCase());
+			
+			arr.sort();
+			// document.getElementById("fruit").value;
+			
+			document.getElementById("display").innerHTML= "So, you want the " + arr.join(" with ") + " with " + newFruit + " mix.";
+			
+			console.log(arr);
+		}
+
+		
+
+
+
+	</script>
 
 
 
