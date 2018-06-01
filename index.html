@@ -28,10 +28,26 @@
 					background-image: url(https://www.pngarts.com/files/1/Water-Splash-PNG-Transparent-Image.png);
 				}
 
-				#menu{
+				#column1{
 					text-align: center;
 					padding-top: 30px;
 
+				}
+
+				h2{
+					font-size: 45px;
+				}
+
+				.menu{
+					font-size: 16px;
+				}
+
+				#greeting{
+					font-size: 30px;
+				}
+
+				#display{
+					font-size: 20px;
 				}
 
 				#picture{
@@ -43,9 +59,6 @@
 					min-width: auto;
 					min-height: auto;
 					
-
-
-
 					/*padding-top: 50px;*/
 					/*width: 50px;
 					height: 50px;
@@ -55,9 +68,6 @@
 					/*width: 100%;
 					height: auto;
 					object-fit: contain;*/
-
-
-
 				}
 			</style>
 
@@ -70,26 +80,24 @@
 
 			<div class="row">
 
-				<div class="col-4" id = menu>
+				<div class="col-4" id = column1>
 
-					<h2>Menu</h2>
-					<h3>Pick any one</h3>
-					<i>
+					<h2><strong>Menu</strong></h2>
+					<i class="menu">
 						<p>Strawberry</p>
 						<p>Banana</p>
 						<p>Grapefruit</p>
-						<p>Grapes</p>
 						<p>Watermelon</p>
 						<p>Acai</p>
 					</i>
+					<br>
 					
-
-					<strong><p>Hi, I'm Kay! </p></strong>
-
+					<i><strong><p id="greeting">Hi, I'm Kay! </p></strong></i>
 					
-					<input type="button" value="May I take your order?" onclick="Prompt()">
+					<input  type="button" value="May I take your order?" onclick="Prompt()">
 					
-					<strong><p id="display"> </p></strong>
+					<br>
+					<i><strong><p id="display"> </p></strong></i>
 
 				</div>
 
