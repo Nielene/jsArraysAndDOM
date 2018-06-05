@@ -115,11 +115,9 @@
 						var newFruit = prompt("Add one new fruit!").toLowerCase();
 						
 						arr.push(newFruit.toLowerCase());
-						
+						arr.sort();
 						
 						var final = document.getElementById("display").innerHTML= "So, you want the " + arr.join(" with ") + " mix.";
-						
-						arr.sort();
 						
 						console.log(arr);
 					}
