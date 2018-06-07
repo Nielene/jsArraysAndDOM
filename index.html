@@ -7,9 +7,6 @@
 
 </head>
 <body>
-
-		
-
 			<style>
 				body{
 					background-color: #f4b342;
@@ -31,7 +28,6 @@
 				#column1{
 					text-align: center;
 					padding-top: 30px;
-
 				}
 
 				h2{
@@ -90,42 +86,34 @@
 					
 					<i><strong><p id="display">Hi, I'm Kay! </p></strong></i>
 					
-					<input  type="button" value="May I take your order?" onclick="Prompt()">
+					<input  type="button" value="May I take your order?" onclick="Request()">
 					
 					<br>
-					<i><strong><p > </p></strong></i>
-
+					<!-- <i><strong><p > </p></strong></i> -->
 				</div>
-
 
 				<div class="col-8" id = picture>
 					
 					<!-- <img src="https://realdeals.eu.com/wp-content/uploads/2017/06/iStock-527673038.jpg"> -->
 					<!-- <img src="https://s3-media1.fl.yelpcdn.com/bphoto/0hKvUc6vyzKHIz7NkWS1CQ/ls.jpg"> -->
 				</div>
-
 			</div>	
 
-
 				<script>
-					var arr = ["apple ", "orange ", "kiwi "];
+					var preList = ["apple ", "orange ", "kiwi "];
 
-					function Prompt(){
+					function Request(){
 
 						var newFruit = prompt("Add one new fruit!").toLowerCase();
 						
-						arr.push(newFruit.toLowerCase());
-						arr.sort();
-						
-						var final = document.getElementById("display").innerHTML= "So, you want the " + arr.join(" with ") + " mix.";
-						
-						console.log(arr);
+						preList.push(newFruit.toLowerCase());
+						preList.sort();
+						 
+						document.getElementById("display").innerHTML= "So, you want the " + preList.join(" with ") + " mix.";
+
+						console.log(preList);
 					}
-
 				</script>
-
-
 	</div>
-
 </body>
 </html>
